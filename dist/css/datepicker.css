@@ -187,10 +187,9 @@
   font-size: 14px;
   color: #4a4a4a;
   width: 250px;
-  position: absolute;
-  left: -100000px;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 100; }
   .datepicker.-from-top- {
     transform: translateY(-8px); }
@@ -203,7 +202,7 @@
   .datepicker.active {
     opacity: 1;
     transform: translate(0);
-    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0s; }
+    visibility: visible}
 
 .datepicker-inline .datepicker {
   border-color: #d7d7d7;
