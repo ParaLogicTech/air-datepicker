@@ -24,6 +24,7 @@
   font-size: $datepickerFontSize;
   color: map_get($datepickerTextColor, common);
   width: $datepickerWidth;
+  position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: opacity $datepickerTransitionSpeed $datepickerTransitionEase, transform $datepickerTransitionSpeed $datepickerTransitionEase;
