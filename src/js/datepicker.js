@@ -613,7 +613,7 @@
          * @param {String|Object} param - parameter's name to update. If object then it will extend current options
          * @param {String|Number|Object} [value] - new param value
          */
-        update: function (param, value) {
+        update: function (param, value, do_not_refresh_input) {
             var len = arguments.length,
                 lastSelectedDate = this.lastSelectedDate;
 
@@ -657,7 +657,9 @@
                 }
             }
 
-            this._setInputValue();
+            if (!do_not_refresh_input) {
+                this._setInputValue();
+            }
 
             return this;
         },
