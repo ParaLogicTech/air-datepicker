@@ -833,7 +833,11 @@
         hide: function () {
             var onHide = this.opts.onHide;
 
-            this.$datepicker.removeClass('active');
+            this.$datepicker
+                .removeClass('active')
+                .css({
+                    left: '-100000px'
+                });
 
             this.focused = '';
             this.keys = [];

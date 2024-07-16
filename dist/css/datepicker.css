@@ -200,7 +200,7 @@
   color: #4a4a4a;
   width: 250px;
   position: absolute;
-  visibility: hidden;
+  pointer-events: none;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
@@ -223,7 +223,7 @@
     opacity: 1;
     -webkit-transform: translate(0);
             transform: translate(0);
-    visibility: visible; }
+    pointer-events: auto; }
 
 .datepicker-inline .datepicker {
   border-color: #d7d7d7;
