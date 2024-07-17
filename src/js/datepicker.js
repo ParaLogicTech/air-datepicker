@@ -617,7 +617,7 @@
             var len = arguments.length,
                 lastSelectedDate = this.lastSelectedDate;
 
-            if (len == 2) {
+            if (len >= 2) {
                 this.opts[param] = value;
             } else if (len == 1 && typeof param == 'object') {
                 this.opts = $.extend(true, this.opts, param)

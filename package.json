@@ -1,6 +1,6 @@
 {
   "name": "@paralogic/air-datepicker",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "browserify": "^17.0.0",
